@@ -54,7 +54,7 @@
   position: absolute;
   z-index: 2;
 }
-img {
+.car img {
   width: 100%;
   animation: car 1s linear infinite;
 }
@@ -93,5 +93,13 @@ img {
 @keyframes wheel {
   100% {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .car {
+    width: 200px;
+  }
+  .car img {
+    width: 100%;
   }
 }
